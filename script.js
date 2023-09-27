@@ -8,7 +8,26 @@ const schedules = {
   
   const daySelect = document.getElementById("day");
   const scheduleDisplay = document.querySelector(".display");
+  // change
+
+  function updateSchedule() {
+    const currentDate = new Date();
+    const currentDay = currentDate.toLocaleString("en-US", { weekday: "long" }).toLowerCase();
+    console.log(currentDay)
+    // Set the selected option to the current day
+    daySelect.value = currentDay;
+    
+    // Display the schedule of the current day
+    displaySchedule(schedules[currentDay]);
+  }
   
+  // Initial update
+  updateSchedule();
+  // change
+
+
+
+
   daySelect.addEventListener("change", function () {
     const selectedDay = daySelect.value;
     

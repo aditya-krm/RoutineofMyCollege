@@ -6,6 +6,7 @@
 body{
     background-color: #6dc6c6;
     font-family: 'Roboto', sans-serif;
+    user-select: none;
 }
 h1{
     text-align: center;
@@ -13,10 +14,17 @@ h1{
     font-size: 40px;
     color: #333;
 }
+.mainmain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 #main{
+    cursor: pointer;
     height: 70vh;
-    width: 65vw;
-    margin-left: 15vw;
+    width: 90vw;
+    max-width: 500px;
+    /* margin-left: 5vw; */
     border-radius: 25px;
     margin-top: 15px;
     background-color: #90909021;
@@ -24,6 +32,7 @@ h1{
     box-shadow: 5px 5px 20px 1px rgba(0, 0, 0, 0.378);
 }
 #day{
+    cursor: pointer;
     text-transform: capitalize;
     font-size: 20px;
     /* margin: 20px 0; */
